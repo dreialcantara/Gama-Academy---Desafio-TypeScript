@@ -10,37 +10,44 @@ type Cachorro = {
   donos?: string;
 };
 
-let rex: Cachorro = {
+let dog1: Cachorro = {
   nome: "Rex",
   idade: 1,
   raça: "Pitbull",
   grandePorte: true,
 };
 
-console.log(`${rex.nome} é um: ${rex.raça}`);
+console.log(`${dog1.nome} é um: ${dog1.raça}`);
 
-//função para desestruturar e adicionar parametros ao objt parametro tem q constar no tipo
+//PARTIAL TORNA TODOS TIPOS OPCIONAIS - a função é para desestruturar e adicionar parametros ao objt parametro tem q constar no tipo
 function adicionarDono(params: Partial<Cachorro>): Cachorro {
-  rex = { ...rex, ...params };
+  dog1 = { ...dog1, ...params };
 
-  return rex;
+  return dog1;
 }
 
-console.log("Eba Rex tem novos donos, a nova ficha de rex é:",
+console.log(`Eba, ${dog1.nome} tem novos donos, sua nova ficha é:`,
   adicionarDono({
     donos: "Drei e Bia",
   })
 );
 
-//omit, para retirar propriedade e chave do tipo
+//omit, para retirar propriedade e chave do tipo, criando typo cachorro mas sem o dono
 type CachorroSemDono = Omit<Cachorro, "donos">;
 
-let belinha: CachorroSemDono = {
-  nome: "nome",
-  idade: 1,
-  raça: "pitbull",
-  grandePorte: true,
-};
+let dog2: CachorroSemDono = {
+    nome: "belinha",
+    idade: 1,
+    raça: "pitbull",
+    grandePorte: true,
+  };
+
+console.log(dog2);
+
+
+
+
+
 
 
 
@@ -51,3 +58,7 @@ interface Animais {
   asas: number | null;
   região: string;
 }
+
+
+
+
