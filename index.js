@@ -23,4 +23,5 @@ let dog2 = {
     raça: "pitbull",
     grandePorte: true,
 };
+console.log(`A ficha de ${dog2.nome} é:`);
 console.log(dog2);

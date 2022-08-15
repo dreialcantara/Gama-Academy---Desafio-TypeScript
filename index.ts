@@ -41,6 +41,7 @@ let dog2: CachorroSemDono = {
     raça: "pitbull",
     grandePorte: true,
   };
+console.log(`A ficha de ${dog2.nome} é:`);
 
 console.log(dog2);
 
