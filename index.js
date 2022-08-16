@@ -9,6 +9,7 @@ let dog1 = {
     grandePorte: true,
 };
 console.log(`${dog1.nome} é um: ${dog1.raça}`);
+console.log("Sua ficha é:", dog1);
 //PARTIAL TORNA TODOS TIPOS OPCIONAIS - a função é para desestruturar e adicionar parametros ao objt parametro tem q constar no tipo
 function adicionarDono(params) {
     dog1 = Object.assign(Object.assign({}, dog1), params);
