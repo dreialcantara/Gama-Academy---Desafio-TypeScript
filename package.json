@@ -1,0 +1,19 @@
+{
+  "name": "gama-academy---desafio-typescript",
+  "version": "1.0.0",
+  "description": "- [x] Intalação do Node versão Estavel\r - [x] Instalar o typescript: npm install -g typescript \r - [x] Criar arquivo tsconfig\r - [x] Criar o index.ts\r - [x] Transpilar o Código para JS\r - [x] quick fix",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreialcantara/Gama-Academy---Desafio-TypeScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreialcantara/Gama-Academy---Desafio-TypeScript/issues"
+  },
+  "homepage": "https://github.com/dreialcantara/Gama-Academy---Desafio-TypeScript#readme"
+}

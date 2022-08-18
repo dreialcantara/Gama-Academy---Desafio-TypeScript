@@ -3,7 +3,7 @@
 export function findAverage(array: number[]): any {
   var soma = 0;
   let i: number;
-  var vazio: string = "O array está vazio!";
+  var vazio: string = 'O array está vazio!';
 
   if (array.length === 0) {
     return vazio;
@@ -45,4 +45,12 @@ export function quarterOf(month: number): number {
   } else if (month >= 10 && month <= 12) {
     return 4;
   } else return 0;
+}
+
+// potencia de numero index array
+
+export function index(array: number[], n: number): number {
+  if (n > array.length) {
+    return -1;
+  } else return Math.pow(array[n], n);
 }
